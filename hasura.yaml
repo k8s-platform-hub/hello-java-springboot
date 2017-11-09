@@ -1,4 +1,4 @@
 description: A basic spring boot hello-world application running on Hasura
-keywords: java, spring, spring-boot, spring
+keywords: getting-started, java, spring, spring-boot, spring
 name: hello-java-springboot
 platformVersion: v0.15.3
