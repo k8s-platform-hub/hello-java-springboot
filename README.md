@@ -1,8 +1,8 @@
 # hello-java-spring-boot
 
-This project consists of a basic hasura project with a simple Java-Spring-Boot app running on it. Once this app is deployed on a Hasura cluster, you will have the app running at https://api.cluster-name.hasura-app.io
+This project consists of a basic Hasura project with a simple Java-Spring-Boot app running on it. Once this app is deployed on a Hasura cluster, you will have the app running at https://api.cluster-name.hasura-app.io
 
-This is the right place to start if you are planning to build or want to learn to build an Java-Spring-Boot  app with hasura.
+This is the right place to start if you are planning to build or want to learn to build an Java-Spring-Boot  app with Hasura.
 
 ## Sections
 
@@ -35,12 +35,12 @@ $ cd hello-java-spring-boot
 
 The above command does the following:
 1. Creates a new folder in the current working directory called `hello-java-spring-boot`
-2. Creates a new free hasura cluster for you and sets that cluster as the default cluster for this project
+2. Creates a new free Hasura cluster for you and sets that cluster as the default cluster for this project
 3. Initializes `hello-java-spring-boot` as a git repository and adds the necessary git remotes.
 
 ### Step 2: Getting cluster information
 
-Every hasura project is run on a Hasura cluster. To get details about the cluster this project is running on:
+Every Hasura project is run on a Hasura cluster. To get details about the cluster this project is running on:
 
 ```sh
 $ hasura cluster status
@@ -57,9 +57,9 @@ Platform Version:   v0.15.3
 Cluster State:      Synced
 ```
 
-Keep a note of your cluster name. Alternatively, you can also go to your [hasura dashboard](https://dashboard.hasura.io) and see the clusters you have.
+Keep a note of your cluster name. Alternatively, you can also go to your [Hasura dashboard](https://dashboard.hasura.io) and see the clusters you have.
 
-### Step 3: Deploying on a hasura cluster
+### Step 3: Deploying on a Hasura cluster
 
 To deploy your app:
 
@@ -74,7 +74,7 @@ Once the above commands are executed successfully, head over to `https://api.clu
 
 ### Api console
 
-Every hasura cluster comes with an api console that gives your a GUI to test out the baas features of hasura. To open the api console
+Every Hasura cluster comes with an api console that gives your a GUI to test out the baas features of Hasura. To open the api console
 
 ```sh
 $ hasura api-console
@@ -108,7 +108,7 @@ Alternatively, you can also view the schema for these tables on the api console 
 ![alt text][data1]
 ![alt text][data2]
 
-This means that you can now leverage the hasura data queries to perform CRUD operations on these tables.
+This means that you can now leverage the Hasura data queries to perform CRUD operations on these tables.
 
 For eg, to fetch a list of all articles from the article table, you have to send the following JSON request to the data api endpoint -> `https://data.cluster-name.hasura-app.io/v1/query` (replace `cluster-name` with your cluster name)
 
