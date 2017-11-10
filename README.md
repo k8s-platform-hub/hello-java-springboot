@@ -1,6 +1,6 @@
 # hello-java-spring-boot
 
-This project consists of a basic hasura project with a simple Java-Spring-Boot app running on it. Once this app is deployed on a Hasura cluster, you will have the app running at [https://app.cluster-name.hasura-app.io](https://app.cluster-name.hasura-app.io).
+This project consists of a basic hasura project with a simple Java-Spring-Boot app running on it. Once this app is deployed on a Hasura cluster, you will have the app running at https://api.cluster-name.hasura-app.io
 
 This is the right place to start if you are planning to build or want to learn to build an Java-Spring-Boot  app with hasura.
 
@@ -70,7 +70,7 @@ $ git push hasura master
 ```
 When you push for the first time, it might take sometime. Next time onwards, it is really fast.
 
-Once the above commands are executed successfully, head over to `https://app.cluster-name.hasura-app.io` (in this case `https://app.h34-excise98-stg.hasura-app.io`) to view your app.
+Once the above commands are executed successfully, head over to `https://api.cluster-name.hasura-app.io` (in this case `https://api.h34-excise98-stg.hasura-app.io`) to view your app.
 
 ### Api console
 
@@ -128,25 +128,25 @@ For eg, to fetch a list of all articles from the article table, you have to send
 }
 ```
 
-To learn more about the data apis, head over to our [docs](https://docs.hasura-stg.hasura-app.io/0.15/manual/data/index.html)
+To learn more about the data apis, head over to our [docs](https://docs.hasura.io/0.15/manual/data/index.html)
 
 ## Auth APIs
 
 Every app almost always requires some form of authentication. This is useful to identify a user and provide some sort of personalised experience to the user. Hasura provides various types of authentication (username/password, mobile/otp, email/password, Google, Facebook etc).
 
-You can try out these in the `API EXPLORER` tab of the `api console`. To learn more, check out our [docs](https://docs.hasura-stg.hasura-app.io/0.15/manual/users/index.html)
+You can try out these in the `API EXPLORER` tab of the `api console`. To learn more, check out our [docs](https://docs.hasura.io/0.15/manual/users/index.html)
 
 ## Filestore APIs
 
 Sometimes, you would want to upload some files to the cloud. This can range from a profile pic for your user or images for things listed on your app. You can securely add, remove, manage, update files such as pictures, videos, documents using Hasura filestore.
 
-You can try out these in the `API EXPLORER` tab of the `api console`. To learn more, check out our [docs](https://docs.hasura-stg.hasura-app.io/0.15/manual/users/index.html)
+You can try out these in the `API EXPLORER` tab of the `api console`. To learn more, check out our [docs](https://docs.hasura.io/0.15/manual/users/index.html)
 
 ## Custom Micromicroservice
 
 There might be cases where you might want to perform some custom business logic on your apis. For example, sending an email/sms to a user on sign up or sending a push notification to the mobile device when some event happens. For this, you would want to create your own custom microservice which does these for you on the endpoints that you define.
 
-This quickstart comes with one such custom microservice written in Java using the Spring-Boot framework. Check it out in action at `https://app.cluster-name.hasura-app.io` . Currently, it just returns a JSON response of "Hello World" at that endpoint.
+This quickstart comes with one such custom microservice written in Java using the Spring-Boot framework. Check it out in action at `https://api.cluster-name.hasura-app.io` . Currently, it just returns a JSON response of "Hello World" at that endpoint.
 
 In case you want to use another language/framework for your custom microservice. Take a look at our docs to see how you can add a new custom microservice.
 
@@ -154,12 +154,12 @@ In case you want to use another language/framework for your custom microservice.
 
 If you have an existing Java-Spring-Boot app and would like to migrate it to Hasura:
 
-- Replace the `microservices/app/app` directory with your app directory.
+- Replace the `microservices/api/app` directory with your app directory.
 - Ensure that the structure of the directory is coherent with the current structure.
 - `git add . && git commit -m "Migration Commit"`
 - `git push hasura master`
 
-Now your existing app should be running on `https://app.cluster-name.hasura-app.io`
+Now your existing app should be running on `https://api.cluster-name.hasura-app.io`
 
 ## Local development
 
@@ -170,7 +170,7 @@ Everytime you push, your code will get deployed on a public URL. However, for fa
 Follow these steps to test out your app locally
 
 ```sh
-$ cd microservices/app/
+$ cd microservices/api/
 $ docker build -t java-spring-boot:<tag> .
 $ docker run -d -p 8080:8080 java-spring-boot:<tag>
 ```
@@ -202,7 +202,7 @@ The project (a.k.a. project directory) has a particular directory structure and 
 │   ├── 1504788327_create_table_user.up.yaml
 │   └── 1504788327_create_table_user.up.sql
 └── microservices
-    └── app
+    └── api
         ├── app/
         ├── k8s.yaml
         └── Dockerfile
