@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../static/markdown.css">
+    <link rel="stylesheet" type="text/css" href="./markdown.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   </head>  
   <body>
@@ -9,7 +9,7 @@
       <blockquote>
       <p>Get started with a free Hasura Project</p>
       </blockquote>
-      <p>This quickstart consists of a basic hasura project with a simple python-flask microservice running on it. Since you have pushed the project, this microservice is running at <a href="/">https://www.cluster-name.hasura-app.io</a></p>
+      <p>This quickstart consists of a basic hasura project with a simple spring-boot microservice running on it. Since you have pushed the project, this microservice is running at <a href="/">https://www.cluster-name.hasura-app.io</a></p>
       <h2 id="sections">Sections</h2>
       <ul>
         <li><a href="#introduction">Introduction</a></li>
@@ -24,7 +24,7 @@
       <ol>
         <li>A basic hasura project</li>
         <li>Two tables <code>article</code> and <code>author</code> with some dummy data</li>
-        <li>A basic python-flask app which runs on the <code>www</code> subdomain.</li>
+        <li>A basic java-spring-boot app which runs on the <code>www</code> subdomain.</li>
       </ol>
       <h2 id="usage">Usage</h2>
       <p>Now that you have deployed the project on your cluster, you would want to manage the schema and explore the Hasura APIs.</p>
@@ -367,7 +367,7 @@
       $ git push hasura master
       </code></pre>
       <br>
-      <p>This quickstart project comes with one such microservice written in Python using Flask. It microservice demonstrates the use of the Data APIs at the /get_articles endpoint. Since this cluster comes with sample data in the form of articles and authors, we make use of the Hasura Data APIs to fetch all articles. Check <a href="/get_articles">here</a>.
+      <p>This quickstart project comes with one such microservice named &quot;www&quot; written in Java using the Spring-boot framework deployed .
       </p>
       <h2 id="files-and-directories">Files and Directories</h2>
       <p>The project (a.k.a. project directory) has a particular directory structure and it has to be maintained strictly, else <code>hasura</code> cli would not work as expected. A representative project is shown below:</p>
