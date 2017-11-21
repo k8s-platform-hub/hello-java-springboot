@@ -6,10 +6,10 @@ remotes:
   {{ cluster.name }}:
     <<: {}
     
-    '{{ cluster.metadata.namespaces.user }}.api':
-      api:
-        dockerfile: microservices/api/Dockerfile
-        path: microservices/api
+    '{{ cluster.metadata.namespaces.user }}.www':
+      www:
+        dockerfile: microservices/www/Dockerfile
+        path: microservices/www
     # Add new remotes here above this line
     # Example:
     
