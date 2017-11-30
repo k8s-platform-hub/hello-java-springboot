@@ -1,4 +1,6 @@
-description: A Hasura starter project with a ready to deploy Java-Spring-boot hello-world web application.
+description: A Hasura starter project with a ready to deploy Java-Spring-boot hello-world
+  web application.
 keywords: getting-started, java, spring, spring-boot, spring
+media: {}
 name: hello-java-springboot
 platformVersion: v0.15.3
