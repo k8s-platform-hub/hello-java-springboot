@@ -161,7 +161,6 @@ notify:
     corsPolicy: allow_all
 
 # To see actual endpoints for these routes, use `$ hasura cluster status`
-
 www:
   /:
     corsPolicy: allow_all
@@ -170,5 +169,3 @@ www:
       namespace: '{{ cluster.metadata.namespaces.user }}'
     upstreamServicePath: /
     upstreamServicePort: 80
-
-
